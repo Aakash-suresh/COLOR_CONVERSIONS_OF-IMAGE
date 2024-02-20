@@ -35,57 +35,67 @@ Split and Merge RGB Image
 ### Step10:
 Split and merge HSV Image
 
-##### Program:
-### Developed By:
-### Register Number: 
+## Program:
+### Developed By: Aakash S
+### Register Number: 212221240001
+i) #To Read,display the image
+```python3
+import cv2
+img = cv2.imread('car.jpg', 0)
+resized_img = cv2.resize(img, None, fx=0.1, fy=0.1)
+cv2.imshow('212221240001', resized_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+ii) #To write the image
+```python3
+import cv2
+img=cv2.imread('car.jpg',0)
+cv2.imwrite('writed_walt.png',img)
+```
+iii) #Find the shape of the Image
+```python3
+import cv2
+img=cv2.imread('car.jpg',0)
+print(img.shape)
+```
+iv) #To access rows and columns
 
+```python3
+import cv2
+img = cv2.imread('car.jpg', 0)
+resized_img = cv2.resize(img, None, fx=0.1, fy=0.1)
+for i in range(100, 250):
+    for j in range(10, 50):
+        resized_img[i][j] = 255  # Set the pixel to white
+cv2.imshow('212221240001', resized_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+v) #To cut and paste portion of image
+```python3
+import cv2
+img = cv2.imread('car.jpg', 0)
+resized_img = cv2.resize(img, None, fx=0.1, fy=0.1)
+copied_portion = resized_img[150:250, 250:450]
+resized_img[10:110, 10:210] = copied_portion
+cv2.imshow('212221240001', resized_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
 
 ## Output:
 
 ### i) Read and display the image
-
-<br>
-<br>
-
+![Output](./images/1.png)
 ### ii)Write the image
-
-<br>
-<br>
-
+![Output](./images/2.png)
 ### iii)Shape of the Image
-
-<br>
-<br>
-
+![Output](./images/3.png)
 ### iv)Access rows and columns
-<br>
-<br>
-
+![Output](./images/4.png)
 ### v)Cut and paste portion of image
-<br>
-<br>
-
-### vi) BGR and RGB to HSV and GRAY
-<br>
-<br>
-
-### vii) HSV to RGB and BGR
-<br>
-<br>
-
-### viii) RGB and BGR to YCrCb
-<br>
-<br>
-
-### ix) Split and merge RGB Image
-<br>
-<br>
-
-### x) Split and merge HSV Image
-<br>
-<br>
-
-
+![Output](./images/5.png)
 
 
 ## Result:
